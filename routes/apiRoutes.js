@@ -35,7 +35,7 @@ apiRouter.post(‘/api/add-movie’, async (req, res) => {
     try {
       const movieId = uuidv4();
       await addMovie(movieId, title);
-      res.json(`Movie added successfully`);
+      res.json("Movie added successfully");
     } catch (err) {
       res.status(500).json(‘Error adding movie’);
     }
@@ -48,7 +48,7 @@ apiRouter.delete(‘/api/movie/:id’, async (req, res) => {
   const movieId = req.params.id;
   try {
     await deleteMovie(movieId);
-    res.json(`Movie with ID ${movieId} has been deleted`);
+    res.json("Movie with ID ${movieId} has been deleted");
   } catch (err) {
     res.status(500).json(‘Error deleting movie’);
   }
@@ -60,7 +60,7 @@ apiRouter.put(‘/api/review/:id’, async (req, res) => {
   if (movieId && content && typeof rating === ‘number’) {
     try {
       await updateReview(reviewId, movieId, content, rating);
-      res.json(`Review with ID ${reviewId} has been updated`);
+      res.json("Review with ID ${reviewId} has been updated");
     } catch (err) {
       res.status(500).json(‘Error updating review’);
     }
