@@ -1,0 +1,23 @@
+{
+  "name": "movie-database",
+  "version": "1.0.0",
+  "description": "mini project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osuchaya/movie-database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osuchaya/movie-database/issues"
+  },
+  "homepage": "https://github.com/osuchaya/movie-database#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
